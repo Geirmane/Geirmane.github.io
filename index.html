@@ -8,7 +8,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 
-    /* Reset */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -43,7 +42,6 @@
       color: #ccc;
     }
 
-    /* Navigation Styling */
     nav {
       position: fixed;
       top: 0;
@@ -56,7 +54,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      transition: background 0.3s ease;
     }
 
     .nav-left {
@@ -71,10 +68,6 @@
       display: flex;
       list-style: none;
       gap: 40px;
-    }
-
-    nav ul li {
-      font-size: 1.1rem;
     }
 
     nav ul li a {
@@ -92,11 +85,11 @@
       transform: scale(1.1);
     }
 
-    /* Who I Am */
     .who-i-am {
       text-align: center;
       margin-top: 150px;
       margin-bottom: 100px;
+      animation: fadeIn 2s ease-in-out;
     }
 
     .who-i-am img {
@@ -125,26 +118,19 @@
       font-size: 1.2rem;
       color: #e04e6d;
       font-weight: 700;
-      letter-spacing: 0.05em;
     }
 
-    .who-i-am .fun-fact {
-      font-size: 1.1rem;
-      color: #ddd;
-      margin-top: 10px;
-    }
-
-    /* What I Do */
-    .what-i-do {
+    .what-i-do, .spotify-projects {
       width: 100%;
       display: flex;
       justify-content: center;
       gap: 40px;
       margin-bottom: 80px;
       flex-wrap: wrap;
+      animation: slideUp 1.5s ease-in-out;
     }
 
-    .what-i-do .card {
+    .card {
       background: #131c24;
       padding: 30px;
       border-radius: 15px;
@@ -154,23 +140,29 @@
       transition: all 0.3s ease;
     }
 
-    .what-i-do .card:hover {
+    .card:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
     }
 
-    .what-i-do .card h3 {
+    .card h3 {
       font-size: 1.5rem;
       color: #e04e6d;
       margin-bottom: 15px;
     }
 
-    .what-i-do .card p {
+    .card p {
       color: #ddd;
       font-size: 1.1rem;
     }
 
-    /* How I Work */
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
     .how-i-work {
       text-align: center;
       margin-bottom: 100px;
@@ -179,35 +171,7 @@
       border-radius: 15px;
       color: #fff;
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .how-i-work h2 {
-      font-size: 3rem;
-      margin-bottom: 40px;
-      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-      font-family: 'Poppins', sans-serif;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #ffd6e8;
-    }
-
-    .how-i-work p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-      text-align: center;
-      color: #e0c3fc;
-    }
-
-    .how-i-work > p:last-of-type {
-      font-weight: 700;
-      font-size: 1.3rem;
-      margin-bottom: 30px;
-      letter-spacing: 0.1em;
-      color: #fff;
+      animation: fadeIn 2s ease-in-out;
     }
 
     .tech-stack {
@@ -220,41 +184,29 @@
 
     .tech-stack .tech {
       background: #7f5af0;
-      color: #eee;
-      font-size: 1.1rem;
       font-weight: 700;
       padding: 12px 20px;
       border-radius: 30px;
       display: flex;
-      align-items: center;
       gap: 8px;
-      box-shadow: 0 4px 15px rgba(127, 90, 240, 0.6);
-      cursor: default;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      user-select: none;
     }
 
-    .tech-stack .tech:hover {
-      background: #9c7aff;
+    .tech:hover {
       transform: translateY(-8px);
       box-shadow: 0 8px 25px rgba(127, 90, 240, 0.8);
     }
 
-    /* Professional Experience Section */
     .experience {
       max-width: 900px;
-      width: 100%;
       color: #ddd;
       margin-bottom: 80px;
-      font-family: 'Roboto Mono', monospace;
     }
 
     .experience h2 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 2.8rem;
-      margin-bottom: 30px;
-      color: #e04e6d;
       text-align: center;
+      color: #e04e6d;
+      font-size: 2.8rem;
       text-shadow: 0 0 10px rgba(224, 78, 109, 0.5);
     }
 
@@ -266,17 +218,11 @@
       font-weight: 700;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       cursor: pointer;
-      user-select: none;
-      transition: background-color 0.3s ease;
-      color: #fff;
-      box-shadow: 0 4px 15px rgba(91, 40, 167, 0.7);
     }
 
     .job:hover {
       background-color: #5a24b1;
-      box-shadow: 0 8px 25px rgba(91, 40, 167, 0.9);
     }
 
     .job-content {
@@ -286,59 +232,65 @@
       border-radius: 10px;
       margin-bottom: 15px;
       font-size: 1rem;
-      color: #ddd;
-      box-shadow: inset 0 0 10px rgba(91, 40, 167, 0.5);
     }
 
     .job-content.show {
       display: block;
     }
 
-    /* Reach Me Section */
     #reach-me {
-      width: 100%;
       text-align: center;
       margin-top: 100px;
       font-size: 1.1rem;
       color: #bbb;
-      font-family: 'Roboto Mono', monospace;
     }
 
     #reach-me a {
       color: #e04e6d;
       text-decoration: none;
       font-weight: 700;
-      transition: text-decoration 0.3s ease;
     }
 
     #reach-me a:hover {
       text-decoration: underline;
     }
 
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
 
-<!-- Navigation -->
+<!-- Navbar -->
 <nav>
   <div class="nav-left">German Felisarta IV</div>
   <ul>
     <li><a href="#who-i-am">Who I Am</a></li>
     <li><a href="#what-i-do">What I Do</a></li>
+    <li><a href="#spotify-projects">Spotify</a></li>
     <li><a href="#how-i-work">How I Work</a></li>
     <li><a href="#reach-me">Reach Me</a></li>
   </ul>
 </nav>
 
-<!-- Who I Am Section -->
+<!-- Who I Am -->
 <section id="who-i-am" class="who-i-am">
-  <img src="Photos/pic.jpg" alt="Felisarta's Profile Picture" />
-  <div class="name">German Felisarta IV</div>
+  <img src="Photos/pic.jpg" alt="Felisarta Profile" />
+  <div class="name">German Felisarta IV
+  </div>
   <div class="tagline">Creative | Critical Thinker | Professional</div>
   <p class="fun-fact">Fun Fact: I like to collect Funko Pops and love to play games.</p>
 </section>
 
-<!-- What I Do Section -->
+<!-- What I Do -->
 <section id="what-i-do" class="what-i-do">
   <div class="card">
     <h3>Software Development</h3>
@@ -354,12 +306,25 @@
   </div>
 </section>
 
-<!-- How I Work Section -->
+<!-- Spotify Project Showcase -->
+<section id="spotify-projects" class="spotify-projects">
+  <div class="card">
+    <img src="Photos/spotify-login.png" alt="Spotify Login Screen">
+    <h3>Spotify Login UI</h3>
+    <p>A sleek login screen built with React Native that mirrors Spotify's branding and user-friendly design, including social logins and password recovery.</p>
+  </div>
+  <div class="card">
+    <img src="Photos/spotify-sidebar.png" alt="Spotify Home Screen">
+    <h3>Spotify Home & Drawer</h3>
+    <p>Fully functional home page with navigation drawer. Features user profile, categories, and smooth transitions for mobile apps using React Navigation.</p>
+  </div>
+</section>
+
+<!-- How I Work -->
 <section id="how-i-work" class="how-i-work">
   <h2>How I Work</h2>
   <p>I approach my work with passion, continuous learning, and teamwork. Clean, maintainable code and efficiency are my priorities. I value feedback and love collaborating to solve problems.</p>
   <p>Technologies I Work With</p>
-
   <div class="tech-stack">
     <div class="tech"><span>🖌️</span> HTML & CSS</div>
     <div class="tech"><span>⚙️</span> JavaScript</div>
@@ -370,7 +335,7 @@
   </div>
 </section>
 
-<!-- Professional Experience Section -->
+<!-- Experience -->
 <section class="experience">
   <h2>Professional Experience</h2>
 
@@ -399,18 +364,18 @@
   </div>
 </section>
 
-<!-- Reach Me Section -->
+<!-- Reach Me -->
 <section id="reach-me">
   <footer>
     <p>Reach me on:</p>
     <p>
-      <a href="mailto:gfelisarta44@gmail.com">Email</a> | 
-      <a href="https://github.com/Geirmane" target="_blank" rel="noopener noreferrer">GitHub</a> 
+      <a href="mailto:gfelisarta44@gmail.com">Email</a> |
+      <a href="https://github.com/Geirmane" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
   </footer>
 </section>
 
-<!-- JavaScript for Job Toggle -->
+<!-- Job Details Toggle Script -->
 <script>
   function toggleJobDetails(jobElement) {
     const jobContent = jobElement.nextElementSibling;
