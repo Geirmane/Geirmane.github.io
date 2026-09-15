@@ -27,13 +27,35 @@
     </div>
   </nav>
 
-  <!-- Who I Am (Notice id="top" added so it scrolls to the very top) -->
+<!-- Who I Am (Side-by-Side Hero) -->
   <section id="top" class="who-i-am">
-    <img src="Photos/pic.jpg" alt="German Felisarta IV Profile" />
-    <div class="name">German Felisarta IV</div>
-    <div class="tagline">Information Technology Student | Developer | Problem Solver</div>
-    <p class="bio">BS Information Technology student at the University of San Carlos with a core focus on low-level fundamentals and interactive software. Experienced in C-based data structures, systems logic, and custom game development using Godot—bridging foundational computer science concepts with creative gameplay systems</p>
-    <p class="fun-fact">Interests: PC gaming, custom multi-monitor desk setups, and anime collectibles.</p>
+    <div class="hero-container">
+      
+      <!-- Left: Portrait Card with Blend Dissolve -->
+      <div class="profile-card">
+        <div class="profile-blend-frame">
+          <img src="Photos/pic.jpg" alt="German Felisarta IV Profile" />
+        </div>
+        <div class="profile-card-footer">
+          <div class="name">German Felisarta IV</div>
+          <div class="tagline">Information Technology Student | Developer | Problem Solver</div>
+        </div>
+      </div>
+
+      <!-- Right: Info, Bio & Interests -->
+      <div class="profile-details">
+        <div class="badge-status">Available for Projects</div>
+        <h2>About Me</h2>
+        <p class="bio">
+          BS Information Technology student at the University of San Carlos with a core focus on low-level fundamentals and interactive software. Experienced in C-based data structures, systems logic, and custom game development using Godot—bridging foundational computer science concepts with creative gameplay systems.
+        </p>
+        <div class="interests-box">
+          <span class="interests-label">Interests:</span>
+          <p class="fun-fact">PC gaming, custom multi-monitor desk setups, and anime collectibles.</p>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- What I Do (Now perfectly visible below navbar when clicked) -->
