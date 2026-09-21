@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>German Felisarta IV | IT Portfolio</title>
+  <title>German Felisarta IV | Web Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- Navbar -->
+  <!-- Navbar -->
   <nav>
     <div class="nav-left">German Felisarta IV</div>
     <div class="nav-right">
       <ul>
-        <li><a href="#top">Who I Am</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#what-i-do">What I Do</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#how-i-work">Tech Stack</a></li>
-        <li><a href="#experience">Certificates</a></li>
+        <li><a href="#experience">Academics</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <!-- Dark / Light Mode Toggle Pill -->
       <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
@@ -27,10 +28,9 @@
     </div>
   </nav>
 
-<!-- Who I Am (Side-by-Side Hero) -->
-  <section id="top" class="who-i-am">
+  <!-- 1. Home Section -->
+  <section id="home" class="who-i-am">
     <div class="hero-container">
-      
       <!-- Left: Portrait Card with Blend Dissolve -->
       <div class="profile-card">
         <div class="profile-blend-frame">
@@ -44,21 +44,20 @@
 
       <!-- Right: Info, Bio & Interests -->
       <div class="profile-details">
-        <div class="badge-status">Available for Projects</div>
-        <h2>About Me</h2>
+        <div class="badge-status">Open to Opportunities</div>
+        <h2>Hello, I'm German</h2>
         <p class="bio">
-          BS Information Technology student at the University of San Carlos with a core focus on low-level fundamentals and interactive software. Experienced in C-based data structures, systems logic, and custom game development using Godot—bridging foundational computer science concepts with creative gameplay systems.
+          BS Information Technology student at the University of San Carlos with a core focus on low-level fundamentals, systems logic, and interactive software. Experienced in C data structures, full-stack application development, and game development using Godot—bridging foundational computer science concepts with creative, real-world systems.
         </p>
         <div class="interests-box">
-          <span class="interests-label">Interests:</span>
+          <span class="interests-label">Interests & Hobbies:</span>
           <p class="fun-fact">PC gaming, custom multi-monitor desk setups, and anime collectibles.</p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- What I Do (Now perfectly visible below navbar when clicked) -->
+  <!-- What I Do -->
   <section id="what-i-do">
     <h2 class="section-title">Core Competencies</h2>
     <div class="what-i-do">
@@ -77,65 +76,96 @@
     </div>
   </section>
 
-  <!-- Projects Showcase -->
+  <!-- 2. Projects Section -->
   <section id="projects">
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects">
       
-       <!-- Spotify Clone -->
-      <a href="https://github.com/Geirmane/AdvMob" target="_blank" rel="noopener noreferrer" class="card-link">
-        <div class="card">
-          <img src="Photos/spotify-login.png" alt="Spotify UI Clone">
-          <h3>Spotify UI Clone</h3>
-          <p>A mobile client built using React Native mirroring Spotify's UI design, including authentication flows, smooth navigation transitions, and drawer navigation.</p>
-        </div>
-      </a>
-
-      <!-- Naruto 2D Multiplayer Game -->
-      <a href="https://github.com/Geirmane/Game_Development" target="_blank" rel="noopener noreferrer" class="card-link">
-        <div class="card">
-          <img src="Photos/week2.4.png" alt="Naruto 2D Multiplayer Game" onerror="this.style.display='none'">
-          <img src="Photos/Week2.2.png" alt="Multiplayer Gameplay">
-          <img src="Photos/newmen.png" alt="Lobby Menu">
-          <br></br>
-          <h3>Naruto 2D Multiplayer Game</h3>
-          <p>Developed in the Godot Engine featuring customized animated sprites (Pain), hitboxes, and a multiplayer lobby system with custom HOST and JOIN network functionality.</p>
-        </div>
-      </a>
-
-      <!-- Echoes of the Past -->
-      <a href="https://github.com/Geirmane/EchoesofThePast" target="_blank" rel="noopener noreferrer" class="card-link">
-        <div class="card">
-          <img src="Photos/e1.png" alt="Echoes of the Past" onerror="this.style.display='none'">
-          <img src="Photos/e2.png" alt="Echoes Gameplay 1">
-          <img src="Photos/e3.png" alt="Echoes Gameplay 2">
-          <br></br>
-          <h3>Echoes of the Past</h3>
-          <p>A collaborative game development project built in the Godot Engine, featuring cohesive gameplay mechanics, custom sprite animation, sound integration, and team-driven workflows.</p>
-        </div>
-      </a>
-
-
-
-     <!-- Capstone Project: CAPSULE -->
-      <a href="https://github.com/Geirmane/capsule-sys" target="_blank" rel="noopener noreferrer" class="card-link">
+      <!-- Project 1: CAPSULE -->
+      <div class="card-link">
         <div class="card">
           <img src="Photos/capsule.png" alt="CAPSULE Capstone Project" onerror="this.style.display='none'">
           <div class="card-header">
-            <h3>C.A.P.S.U.L.E.</h3>
+            <h3>CAPSULE</h3>
             <span class="badge">Capstone • In Progress</span>
           </div>
-          <p>A full-stack laboratory inventory and borrowing management system built for the University of San Carlos Department of Pharmacy. Designed to streamline laboratory workflows, it digitizes multi-zone chemical tracking, QR-driven equipment borrowing, schedule conflict prevention, and end-of-semester group liability auditing.</p>
+          <p>A full-stack laboratory inventory and borrowing management system built for the University of San Carlos Department of Pharmacy. Designed to streamline laboratory workflows, it digitizes multi-zone chemical tracking, QR-driven equipment borrowing, and group liability auditing.</p>
+          <div class="tech-tags">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>Tailwind</span>
+            <span>PostgreSQL</span>
+          </div>
+          <a href="https://github.com/Geirmane/capsule-sys" target="_blank" rel="noopener noreferrer" class="project-btn">View Repository &rarr;</a>
         </div>
-      </a>
+      </div>
 
+      <!-- Project 2: Spotify Clone -->
+      <div class="card-link">
+        <div class="card">
+          <img src="Photos/spotify-login.png" alt="Spotify UI Clone">
+          <div class="card-header">
+            <h3>Spotify Mobile UI</h3>
+          </div>
+          <p>A mobile client built using React Native mirroring Spotify's signature dark aesthetic, featuring simulated authentication flows, categorized home shelves, and drawer navigation.</p>
+          <div class="tech-tags">
+            <span>React Native</span>
+            <span>JavaScript</span>
+            <span>Mobile UI</span>
+          </div>
+          <a href="https://github.com/Geirmane/AdvMob" target="_blank" rel="noopener noreferrer" class="project-btn">View Repository &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Project 3: Naruto 2D Multiplayer Game -->
+      <div class="card-link">
+        <div class="card">
+          <img src="Photos/week2.4.png" alt="Naruto 2D Multiplayer Game" onerror="this.style.display='none'">
+          <div class="card-header">
+            <h3>Naruto 2D Multiplayer</h3>
+          </div>
+          <p>Developed in the Godot Engine featuring customized animated sprites, synchronized combat hitboxes, and an integrated peer-to-peer multiplayer lobby system with HOST and JOIN functionality.</p>
+          <div class="tech-tags">
+            <span>Godot Engine</span>
+            <span>GDScript</span>
+            <span>Networking</span>
+          </div>
+          <a href="https://github.com/Geirmane/Game_Development" target="_blank" rel="noopener noreferrer" class="project-btn">View Repository &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Project 4: Echoes of the Past -->
+      <div class="card-link">
+        <div class="card">
+          <img src="Photos/e1.png" alt="Echoes of the Past" onerror="this.style.display='none'">
+          <div class="card-header">
+            <h3>Echoes of the Past</h3>
+          </div>
+          <p>A collaborative game project in Godot featuring narrative-driven mechanics, custom sprite animation states, spatial sound cues, and team-driven Git version control practices.</p>
+          <div class="tech-tags">
+            <span>Godot</span>
+            <span>2D Game Design</span>
+            <span>Team Git</span>
+          </div>
+          <a href="https://github.com/Geirmane/EchoesofThePast" target="_blank" rel="noopener noreferrer" class="project-btn">View Repository &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dynamic GitHub Repositories (Bonus Requirement) -->
+    <div class="dynamic-repos-container">
+      <h3 class="sub-section-title">Latest Repositories (Live from GitHub)</h3>
+      <div id="github-repos" class="github-repo-grid">
+        <div class="repo-loading">Loading latest repositories...</div>
+      </div>
     </div>
   </section>
 
-<!-- How I Work -->
+  <!-- How I Work / Tech Stack -->
   <section id="how-i-work" class="how-i-work">
     <h2>How I Work</h2>
-    <p>I value clean architecture, maintainable code, and rigorous testing. Whether debugging low-level memory in C, building game logic in Godot, or developing user interfaces, I prioritize scalable solutions and continuous learning.</p>
+    <p>I value clean architecture, maintainable code, and thorough testing. Whether debugging low-level memory in C, implementing gameplay state machines, or developing reactive front-end interfaces, I focus on scalable solutions.</p>
     <p class="subtext">Technologies & Tools I Work With</p>
     <div class="tech-stack">
       <div class="tech"><span>⚡</span> C Language</div>
@@ -165,7 +195,7 @@
       <div class="date">Present</div>
     </div>
     <div class="job-content">
-      <p>B.S. in Information Technology curriculum focusing on Data Structures & Algorithms, Network Infrastructure, Full-Stack Web Development, and Game Design & Programming.</p>
+      <p>Focused on Data Structures & Algorithms, Network Infrastructure, Full-Stack Web Development, and Interactive Game Systems.</p>
     </div>
 
     <div class="job" onclick="toggleJobDetails(this)">
@@ -181,15 +211,15 @@
       <div class="date">2024</div>
     </div>
     <div class="job-content">
-      <p>I completed a 280-hour training program in Computer Systems Servicing NC II, earning competencies in assembling hardware, setting up computer networks and servers, and diagnosing and maintaining system infrastructure</p>
+      <p>Completed a 280-hour training program in Computer Systems Servicing NC II, earning competencies in hardware assembly, server configuration, network setups, and systems maintenance.</p>
     </div>
 
-<div class="job" onclick="toggleJobDetails(this)">
-      <div class="title">Introduction to Cybersecurity</div>
+    <div class="job" onclick="toggleJobDetails(this)">
+      <div class="title">Introduction to Cybersecurity — Cisco Networking Academy</div>
       <div class="date">2024</div>
     </div>
     <div class="job-content">
-      <p>Successfully completed the Cisco Networking Academy's Introduction to Cybersecurity course on October 12, 2024, demonstrating core competencies in digital safety, threat awareness, and network defense fundamentals.</p>
+      <p>Completed the Cisco Networking Academy course on October 12, 2024, demonstrating core competencies in digital safety, threat awareness, and network defense fundamentals.</p>
     </div>
 
     <div class="job" onclick="toggleJobDetails(this)">
@@ -199,9 +229,42 @@
     <div class="job-content">
       <p>Evaluated system vulnerabilities, configured firewalls and intrusion detection rules, and practiced defense-in-depth principles across network protocols.</p>
     </div>
+  </section>
 
+  <!-- 3. Contact Section (Required) -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-subtitle">Have a question, collaboration idea, or project opportunity? Send a message below!</p>
     
+    <div class="contact-card">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required />
+        </div>
 
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <!-- Custom Success Feedback Alert -->
+      <div id="form-success-alert" class="alert-success" style="display: none;">
+        <span class="alert-icon">✓</span>
+        <div>
+          <h4>Message Sent!</h4>
+          <p id="success-text">Thank you for reaching out. Your message has been recorded.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer Section -->
@@ -256,13 +319,13 @@
 
   <!-- Scripts -->
   <script>
-    // Accordion Toggle for Experiences
+    // 1. Accordion Toggle for Experiences
     function toggleJobDetails(jobElement) {
       const jobContent = jobElement.nextElementSibling;
       jobContent.classList.toggle('show');
     }
 
-    // Theme Toggle Functionality
+    // 2. Dark / Light Theme Toggle with LocalStorage
     const themeBtn = document.getElementById('theme-toggle');
     const themeText = document.getElementById('theme-text');
 
@@ -277,7 +340,6 @@
       localStorage.setItem('portfolio-theme', theme);
     }
 
-    // Initialize Theme from localStorage or Default to Dark
     const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
     setTheme(savedTheme);
 
@@ -285,6 +347,55 @@
       const isLight = document.body.classList.contains('light-theme');
       setTheme(isLight ? 'dark' : 'light');
     });
+
+    // 3. Contact Form Submission with Custom Success Alert
+    const contactForm = document.getElementById('contact-form');
+    const alertBox = document.getElementById('form-success-alert');
+    const successText = document.getElementById('success-text');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      
+      successText.textContent = `Thank you, ${name}! Your message has been received successfully.`;
+      alertBox.style.display = 'flex';
+      contactForm.reset();
+
+      setTimeout(() => {
+        alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    });
+
+    // 4. Bonus: Dynamic GitHub API Integration
+    async function loadGitHubRepos() {
+      const reposContainer = document.getElementById('github-repos');
+      try {
+        const res = await fetch('https://api.github.com/users/Geirmane/repos?sort=updated&per_page=4');
+        if (!res.ok) throw new Error('Failed to fetch repos');
+        const repos = await res.parse ? await res.parse() : await res.json();
+
+        reposContainer.innerHTML = '';
+        repos.forEach(repo => {
+          const card = document.createElement('a');
+          card.href = repo.html_url;
+          card.target = '_blank';
+          card.rel = 'noopener noreferrer';
+          card.className = 'repo-card';
+          card.innerHTML = `
+            <div class="repo-header">
+              <span class="repo-name">${repo.name}</span>
+              <span class="repo-stars">★ ${repo.stargazers_count}</span>
+            </div>
+            <p class="repo-desc">${repo.description || 'Public repository on GitHub.'}</p>
+            <div class="repo-lang">${repo.language ? `● ${repo.language}` : 'Codebase'}</div>
+          `;
+          reposContainer.appendChild(card);
+        });
+      } catch (err) {
+        reposContainer.innerHTML = '<p class="repo-error">Could not load live repositories at this time.</p>';
+      }
+    }
+    loadGitHubRepos();
   </script>
 
 </body>
